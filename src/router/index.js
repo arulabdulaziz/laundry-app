@@ -6,12 +6,13 @@ import Home from '../pages/home';
 import Akunt from '../pages/akunt';
 import Splash from '../pages/splash';
 import Order from '../pages/order';
+import BottomNavigator from '../components/bottom-navigator';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 import {NavigationContainer} from '@react-navigation/native';
 const MainPage = () => {
       return (
-        <Tab.Navigator>
+        <Tab.Navigator tabBar={props => <BottomNavigator {...props} />}>
           <Tab.Screen
             name="Home"
             component={Home}
