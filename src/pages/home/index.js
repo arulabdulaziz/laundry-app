@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {HeaderBackground, Logo} from '../../assets/images';
+import ActviveOrder from '../../components/active-order';
 import Balance from '../../components/balance';
 import OurService from '../../components/our-service';
 const Home = () => {
@@ -32,6 +33,9 @@ const Home = () => {
         <View style={styles.service}>
           <OurService />
         </View>
+        <View style={styles.activeOrder}>
+          <ActviveOrder />
+        </View>
       </ScrollView>
     </View>
   );
@@ -54,7 +58,12 @@ const styles = StyleSheet.create({
     height: windowHeight * 0.06,
     marginTop: windowHeight * 0.02,
   },
-  service: {marginTop: 20, 
+  service: {
+    marginTop: 20,
+    // marginHorizontal: 20,
+  },
+  activeOrder: {
+    marginTop: 20,
     // marginHorizontal: 20,
   },
 });

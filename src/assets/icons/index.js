@@ -11,7 +11,8 @@ import Ironing from './Ironing';
 import Kilo from './Kilo';
 import Shirt from './Shirt';
 import Truck from './Truck';
-import Dress from "./Dress"
+import Dress from "./Dress";
+import WashingMachine from './WashingMachine';
 export {
   IconHome,
   IconHomeActive,
@@ -27,4 +28,5 @@ export {
   Shirt,
   Truck,
   Dress,
+  WashingMachine,
 };

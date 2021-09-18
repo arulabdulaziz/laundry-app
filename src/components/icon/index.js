@@ -14,6 +14,7 @@ import {
   Shirt,
   Truck,
   Dress,
+  WashingMachine
 } from '../../assets';
 const Icon = ({label, isFocused}) => {
     switch (label) {
@@ -39,6 +40,8 @@ const Icon = ({label, isFocused}) => {
         return <Shirt />;
       case 'Express':
         return <Truck />;
+      case 'Washing Machine':
+        return <WashingMachine />;
       default:
         return <IconHome />;
     }
