@@ -13,11 +13,12 @@ import {
   Kilo,
   Shirt,
   Truck,
+  Dress,
 } from '../../assets';
 const Icon = ({label, isFocused}) => {
     switch (label) {
       case 'Home':
-       return isFocused ? <IconHomeActive /> : <IconHome />;
+        return isFocused ? <IconHomeActive /> : <IconHome />;
       case 'Order':
         return isFocused ? <IconOrderActive /> : <IconOrder />;
       case 'Akunt':
@@ -25,7 +26,19 @@ const Icon = ({label, isFocused}) => {
       case 'Add Balance':
         return <AddMoney />;
       case 'Add Coin':
-        return <AddCoin/>;
+        return <AddCoin />;
+      case 'Kilo':
+        return <Kilo />;
+      case 'Carpet':
+        return <Carpet />;
+      case 'Ironing':
+        return <Ironing />;
+      case 'VIP':
+        return <Dress />;
+      case 'Unit':
+        return <Shirt />;
+      case 'Express':
+        return <Truck />;
       default:
         return <IconHome />;
     }

@@ -26,14 +26,14 @@ const Balance = () => {
           <View style={styles.icon}>
             <Icon label={'Add Balance'} />
           </View>
-          <Text style={{textAlign: 'center'}}>Add Saldo</Text>
+          <Text style={styles.textIcon}>Add Saldo</Text>
         </TouchableOpacity>
-        <View style={{width: 10}}/>
+        <View style={{width: 10}} />
         <TouchableOpacity style={styles.buttonIcon}>
           <View style={styles.icon}>
             <Icon label={'Add Coin'} />
           </View>
-          <Text style={{textAlign: 'center'}}>Get Point</Text>
+          <Text style={styles.textIcon}>Get Point</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
     padding: 17,
-    marginHorizontal: 20,
+    // marginHorizontal: 20,
     borderRadius: 10,
     shadowColor: '#000',
     shadowOffset: {
@@ -101,5 +101,9 @@ const styles = StyleSheet.create({
   buttonIcon: {
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  textIcon: {
+    fontFamily: 'TitilliumWeb-Regular',
+    textAlign: 'center',
   },
 });

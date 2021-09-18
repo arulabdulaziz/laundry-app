@@ -10,6 +10,7 @@ import {
 import {ScrollView} from 'react-native-gesture-handler';
 import {HeaderBackground, Logo} from '../../assets/images';
 import Balance from '../../components/balance';
+import OurService from '../../components/our-service';
 const Home = () => {
   return (
     <View style={styles.container}>
@@ -25,7 +26,12 @@ const Home = () => {
             </Text>
           </View>
         </ImageBackground>
-        <Balance />
+        <View style={{marginHorizontal: 20}}>
+          <Balance />
+        </View>
+        <View style={styles.service}>
+          <OurService />
+        </View>
       </ScrollView>
     </View>
   );
@@ -35,7 +41,7 @@ const windowHeight = Dimensions.get('window').height;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // backgroundColor: 'white'
+    backgroundColor: 'white',
   },
   header: {
     width: windowWidth,
@@ -47,6 +53,9 @@ const styles = StyleSheet.create({
     width: windowWidth * 0.25,
     height: windowHeight * 0.06,
     marginTop: windowHeight * 0.02,
+  },
+  service: {marginTop: 20, 
+    // marginHorizontal: 20,
   },
 });
 export default Home;
